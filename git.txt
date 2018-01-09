@@ -1,0 +1,5 @@
+
+git
+
+git clone (リモートリポジトリのurl) //clone作成
+cd (クローンリポジトリ名)
