@@ -3,3 +3,17 @@ git
 
 git clone (リモートリポジトリのurl) //clone作成
 cd (クローンリポジトリ名)
+〇git.txt作成編集
+git add . //ステージングエリアにあげる
+git commit -m "first commit" //コミット．-mはメッセージ付きの意
+※この時点でmasterブランチが作られる
+git log (→「HEAD->master」のコミット)
+git branch dev //現状のコミット地点でdevブランチを作成
+git checkout dev //チェックアウト
+git log (→「HEAD->dev, master」のコミット)
+〇dev.txt作成編集
+git add .
+git commit -m "second commit"
+git log(→first　commitのところに「master」,second　commitのところに「HEAD->dev」)
+〇さらにgit.txt編集
+git status (Changes not staged for commit→「modified:git.txt」，Changes added to commit→なし)
